@@ -17,6 +17,7 @@ body {
 
 header {
   padding: 1em;
+  box-sizing: border-box;
 }
 
 header > ul {
@@ -82,4 +83,50 @@ header > div.header-bottom > p.copyright {
 
 .application {
   padding: 1em;
+}
+
+.profiles-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 2em;
+}
+
+.profile-card {
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.226);
+  border-radius: 6px;
+  padding: 1em;
+}
+
+.profile-card:hover {
+  box-shadow: none;
+  outline: 2px solid;
+  outline-color: rgba(128, 128, 128, 0.411);
+}
+
+.profile-screenshot {
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 54px;
+  border-radius: 100px;
+}
+
+.profile-card-body {
+  display: flex;
+  align-items: center;
+}
+
+.profile-username {
+  margin-left: 10px;
+  font-size: medium;
+}
+
+.profile-fullname {
+  margin-top: 1em;
 }
