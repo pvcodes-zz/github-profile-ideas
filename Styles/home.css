@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28% auto;
+      grid-template-columns: 28% auto;
+}
+
+header {
+  padding: 1em;
+}
+
+header > ul {
+  list-style: none;
+}
+
+header > ul > li {
+  margin-top: 2em;
+}
+
+header > ul > li > a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+header > ul > li > a:hover {
+  color: gray;
+}
+
+header > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  margin-top: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header > div > button {
+  margin-bottom: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+}
+
+header > div > button.primaryButton {
+  color: white;
+  background-color: blue;
+  font-family: inherit;
+}
+
+header > div > button.primaryButton:hover {
+  -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 255, 0.37);
+          box-shadow: 2px 4px 16px rgba(0, 0, 255, 0.37);
+}
+
+header > div > button.secondaryButton {
+  background-color: #e6e6e6;
+  color: gray;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+header > div > button.secondaryButton:hover {
+  -webkit-box-shadow: 2px 4px 18px rgba(128, 128, 128, 0.37);
+          box-shadow: 2px 4px 18px rgba(128, 128, 128, 0.37);
+}
+
+header > div.header-bottom {
+  margin-top: 100%;
+}
+
+header > div.header-bottom > p.copyright {
+  color: gray;
+}
+
+.application {
+  padding: 1em;
+}
+/*# sourceMappingURL=home.css.map */
