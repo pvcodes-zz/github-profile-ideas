@@ -142,9 +142,82 @@ header > div.header-bottom > p.copyright {
 .profile-username {
   margin-left: 10px;
   font-size: medium;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .profile-fullname {
   margin-top: 1em;
+}
+
+div.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+div.search-container > input[type=text].search-input {
+  padding: 1em;
+  width: 45%;
+  border: none;
+  background-color: gainsboro;
+  border-radius: 4px;
+}
+
+div.search-container > button.search-button {
+  width: 20%;
+  margin-left: 1em;
+  border: none;
+  border-radius: 4px;
+}
+
+.primaryButton {
+  color: white;
+  background-color: blue;
+  font-family: inherit;
+}
+
+.primaryButton:hover {
+  -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 255, 0.37);
+          box-shadow: 2px 4px 16px rgba(0, 0, 255, 0.37);
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-view {
+    display: block;
+    text-align: center;
+  }
+  .mobile-view > h3 {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.application {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  body {
+    display: inline;
+  }
+  div.mobile-view > button {
+    padding: 0.4em;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 2em;
+  }
 }
 /*# sourceMappingURL=home.css.map */
