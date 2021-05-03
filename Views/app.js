@@ -11,7 +11,7 @@ fetch('https://raw.githubusercontent.com/DesignSystemsOSS/github-profile-ideas/m
     let profileCard = document.createElement("div");
     profileCard.classList.add("profile-card");
 
-    let profile_username = document.createElement("h2");
+    let profile_username = document.createElement("a");
     profile_username.classList.add('profile-username');
 
     let profile_fullname = document.createElement("p");
@@ -24,6 +24,8 @@ fetch('https://raw.githubusercontent.com/DesignSystemsOSS/github-profile-ideas/m
     profile_screenshot.classList.add("profile-screenshot");
     
     profile_username.textContent = `@${res[profile_data].github_username}`;
+    profile_username.href = `https://www.github.com/${res[profile_data].github_username}`;
+    profile_username.target = "_blank";
     profile_fullname.textContent = res[profile_data].fullname;
     profile_photo.src = res[profile_data].profile_photo;
     profile_screenshot.src = res[profile_data].profile_screenshot;
