@@ -16,14 +16,8 @@ body {
       grid-template-columns: 28% auto;
 }
 
-.application {
-  margin-left: 200px;
-  /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
-
 header {
-  padding: 1em;
+  padding: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
@@ -105,7 +99,11 @@ header > div.header-bottom > p.copyright {
 }
 
 .application {
-  padding: 1em;
+  padding: 2rem;
+  margin: 1rem 15rem;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  width: 100%;
 }
 
 .profiles-container {
@@ -126,6 +124,7 @@ header > div.header-bottom > p.copyright {
           box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.226);
   border-radius: 6px;
   padding: 1em;
+  width: 25rem;
 }
 
 .profile-card:hover {
@@ -141,7 +140,7 @@ header > div.header-bottom > p.copyright {
 }
 
 .profile-photo {
-  width: 54px;
+  width: 75px;
   border-radius: 100px;
 }
 
@@ -157,9 +156,83 @@ header > div.header-bottom > p.copyright {
 .profile-username {
   margin-left: 10px;
   font-size: medium;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .profile-fullname {
   margin-top: 1em;
+}
+
+div.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.6em;
+  width: 100%;
+  margin-bottom: 1.6em;
+}
+
+div.search-container > input[type=text].search-input {
+  padding: 1em;
+  width: inherit;
+  border: none;
+  background-color: gainsboro;
+  border-radius: 4px;
+}
+
+div.search-container > button.search-button {
+  width: 30%;
+  margin-left: 1em;
+  border: none;
+  border-radius: 4px;
+}
+
+.primaryButton {
+  color: white;
+  background-color: blue;
+  font-family: inherit;
+}
+
+.primaryButton:hover {
+  -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 255, 0.37);
+          box-shadow: 2px 4px 16px rgba(0, 0, 255, 0.37);
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-view {
+    display: block;
+    text-align: center;
+  }
+  .mobile-view > h3 {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.application {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  body {
+    display: inline;
+  }
+  div.mobile-view > button {
+    padding: 0.4em;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 2em;
+  }
 }
 /*# sourceMappingURL=home.css.map */

@@ -52,7 +52,7 @@
         Add your GitHub Profile
       </button>
 
-      <button onclick="window.open('https://github.com/DesignSystemsOSS/github-profile-ideas/issues');"
+      <button onclick="window.open('https://github.com/DesignSystemsOSS/github-profile-ideas/CONTRIBUTING.md');"
         class="secondaryButton">
 
         Tutorial: How to add your Profile
@@ -68,9 +68,31 @@
 
   <div class="application">
     <h2>All Profiles</h2>
+    <form action="" id="search-profiles">
+      <div class="search-container">
+        <input type="text" placeholder="Search by Username, Full Name" class="search-input" />
+        <button class="search-button primaryButton">
+          Search <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+
     <div class="profiles-container">
       <!-- all the profiles will be implemented here -->
     </div>
+  </div>
+
+  <!-- mobile view notification -->
+  <div class="mobile-view">
+    <h3>
+      Mobile view for this website is currently not available.
+      If you want to contribute to this project, you're welcome!
+    </h3>
+
+    <button class="primaryButton"
+      onclick="window.open('https://github.com/DesignSystemsOSS/github-profile-ideas/issues');">
+      Get started with your first contribution
+    </button>
   </div>
 
 
