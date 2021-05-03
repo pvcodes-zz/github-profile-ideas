@@ -45,4 +45,3 @@ fetch('https://raw.githubusercontent.com/DesignSystemsOSS/github-profile-ideas/m
     ProfileContainer.append(profileCard);
   }
 });
-
