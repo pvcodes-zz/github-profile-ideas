@@ -2,7 +2,7 @@
 name: Add my GitHub Profile
 about: Create this issue and add your profile to the showcase website
 title: 'Adding my GitHub Profile'
-labels: 'add my profile ✅'
+labels: 'add my profile :white_check_mark:'
 assignees: ''
 
 ---
