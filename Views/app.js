@@ -2,7 +2,7 @@
 const ProfileContainer = document.querySelector('.profiles-container');
 
 
-fetch('/Data/profile_data.json')
+fetch('https://raw.githubusercontent.com/DesignSystemsOSS/github-profile-ideas/master/Data/profile_data.json')
   .then((res) => res.json())
   .then((res) => {
   for (let profile_data in res) {
