@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Styles/home.css">
   <title>GitHub Profile Ideas / The DesignSystems</title>
@@ -70,6 +69,14 @@
 
   <div class="application">
     <h2>All Profiles</h2>
+    <!-- <form action="" id="search-profiles">
+      <div class="search-container">
+        <input type="text" placeholder="Search by Username, Full Name" class="search-input" />
+        <button class="search-button primaryButton">
+          Search <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form> -->
     <form action="./search.html" id="search-profiles" method="GET">
       <div class="search-container">
         <input type="text" placeholder="Search by Username, Full Name" class="search-input" name="search" />
@@ -101,10 +108,16 @@
   <!-- adding JS module -->
   <script src="Views/app.js"></script>
   <script>
+    search_key_obj = getKeyword();
+    let len_obj = Object.keys(search_key_obj).length
+    let search = search_key_obj.search;
     addCards((profiles_obj) => {
       for (i in profiles_obj) {
-        createCard(i, profiles_obj);
+        if ((profiles_obj[i].github_username.includes(search)) || (profiles_obj[i].fullname.includes(search))) {
+          createCard(i, profiles_obj);
+        }
       }
+
     });
   </script>
 </body>
